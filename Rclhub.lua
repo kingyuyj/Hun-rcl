@@ -11,15 +11,10 @@
 --]]
 
 -- Load Orion UI
-local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Orion/main/source"))()
+-- Removed duplicate OrionLib
 
 -- Initialize UI
-local Window = OrionLib:MakeWindow({
-    Name = "👑 Rcl Hub | Blox Fruits",
-    HidePremium = false,
-    SaveConfig = true,
-    ConfigFolder = "RclHub"
-})
+-- Removed duplicate Window
 
 -- Functions
 local function AutoFarm() -- AutoFarm Full Logic
@@ -393,8 +388,8 @@ end
 
 -- Orion UI Interface Setup with Kill Aura and Weapon Selection
 
-local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Orion/main/source"))()
-local Window = OrionLib:MakeWindow({Name = "Rcl Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "RclHub"})
+-- Removed duplicate OrionLib
+-- Removed duplicate Window
 
 local weaponSelected = ""
 local killaura = false
@@ -902,3 +897,4 @@ HomeTab:AddDropdown({
 })
 
 -- [UI Enhancements: Logo + Themes End]
+
