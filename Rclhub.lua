@@ -63,6 +63,12 @@ UtilityTab:AddButton({Name = "FPS Boost", Callback = FPSBoost})
 UtilityTab:AddButton({Name = "Server Hop", Callback = ServerHop})
 
 -- Init UI
+game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "Rcl Hub",
+    Text = "✅ السكربت اشتغل بنجاح!",
+    Duration = 5
+})
+
 OrionLib:Init()
 
 
@@ -566,6 +572,12 @@ MainTab:AddToggle({
 })
 
 -- Load UI
+game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "Rcl Hub",
+    Text = "✅ السكربت اشتغل بنجاح!",
+    Duration = 5
+})
+
 OrionLib:Init()
 
 -- [Orion UI Code End]
