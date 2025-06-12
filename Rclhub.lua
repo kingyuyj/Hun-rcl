@@ -1,4 +1,30 @@
 
+-- Orion UI Embedded Locally (No HttpGet Needed)
+-- Source: https://github.com/shlexware/Orion
+local OrionLib = {}
+
+-- Basic UI setup and functions here (short version)
+-- You must provide the full Orion UI source code from the official repo if needed
+
+-- THIS IS A PLACEHOLDER FOR THE FULL ORION UI LIBRARY
+-- If you want a fully working script, insert the Orion UI full code here:
+-- https://github.com/shlexware/Orion/blob/main/source
+
+warn("⚠️ Orion UI Library not fully embedded. Please add the full Orion source above this line.")
+
+-- Minimal dummy function to avoid breaking
+function OrionLib:MakeWindow(opts)
+    return setmetatable({}, {
+        __index = function() return function() end end
+    })
+end
+
+function OrionLib:Init() end
+
+-- End Orion UI Embedded
+
+
+
 --[[
 ██████╗░░█████╗░██╗░░░░░  ██╗██╗░░░░░██╗░░██╗
 ██╔══██╗██╔══██╗██║░░░░░  ██║██║░░░░░██║░██╔╝
@@ -63,12 +89,6 @@ UtilityTab:AddButton({Name = "FPS Boost", Callback = FPSBoost})
 UtilityTab:AddButton({Name = "Server Hop", Callback = ServerHop})
 
 -- Init UI
-game:GetService("StarterGui"):SetCore("SendNotification", {
-    Title = "Rcl Hub",
-    Text = "✅ السكربت اشتغل بنجاح!",
-    Duration = 5
-})
-
 OrionLib:Init()
 
 
@@ -475,7 +495,7 @@ end)
 
 -- Orion UI Setup
 
-local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Orion/main/source"))()
+local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/UltraStuff/scripts2/main/orionlib.lua"))()
 local Window = OrionLib:MakeWindow({Name = "Rcl Hub | Blox Fruits", HidePremium = false, SaveConfig = true, ConfigFolder = "RclHub"})
 
 -- Tabs
@@ -572,12 +592,6 @@ MainTab:AddToggle({
 })
 
 -- Load UI
-game:GetService("StarterGui"):SetCore("SendNotification", {
-    Title = "Rcl Hub",
-    Text = "✅ السكربت اشتغل بنجاح!",
-    Duration = 5
-})
-
 OrionLib:Init()
 
 -- [Orion UI Code End]
